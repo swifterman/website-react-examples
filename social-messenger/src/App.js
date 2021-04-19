@@ -20,9 +20,10 @@ import { getRandomImage } from './assets';
 
 const urlParams = new URLSearchParams(window.location.search);
 
-const apiKey = urlParams.get('apikey') || process.env.REACT_APP_STREAM_KEY;
-const user = urlParams.get('user') || process.env.REACT_APP_USER_ID;
-const userToken = urlParams.get('user_token') || process.env.REACT_APP_USER_TOKEN;
+const apiKey = 'jwxq6445kwaz'; //urlParams.get('apikey') || process.env.REACT_APP_STREAM_KEY;
+const user = '0017865718252'; //urlParams.get('user') || process.env.REACT_APP_USER_ID;
+const userToken =
+  'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMDAxNzg2NTcxODI1MiJ9.QcjLHa9f_4BBhBK1DSaCThY2WXfOkWXzvFu8vGkPoEw'; //urlParams.get('user_token') || process.env.REACT_APP_USER_TOKEN;
 const targetOrigin = urlParams.get('target_origin') || process.env.REACT_APP_TARGET_ORIGIN;
 
 const noChannelNameFilter = urlParams.get('no_channel_name_filter') || false;
